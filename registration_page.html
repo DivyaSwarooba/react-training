@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Registration Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+       body {
+  background-color: #92a8d1;
+}
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Registration</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="main.html">Home</a></li>
+          <li class="active"><a href="display_records.html">Records</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>My Favorite Quote</h2>
+        <p>Do what you can, with what you have, where you are.</p>
+        <hr class="hidden-sm hidden-md hidden-lg">
+      </div>
+      <div class="col-sm-4">
+        <h2>Fill the below details</h2>
+        <form>
+          <img src="icon-register.jpg" alt="Upload Photo" style="width:300px;height:100px;"><br>
+          <!--Name-->
+          <div class="form-group">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" class="form-control"><br>
+          </div>
+          <!--DOB-->
+          <label for="birthday">Date of Birth:</label><br>
+          <input type="date" id="birthday" name="birthday" class="form-control"><br>
+          <!--Gender-->
+          <label for="gender">Gender</label><br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <!--Multiline-->
+          <label for="address">Address:</label><br>
+          <textarea name="address" rows="10" cols="30" class="form-control">Enter your address</textarea><br>
+          <!--Password-->
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" class="form-control"><br>
+          <label for="lname">Confirm Password:</label><br>
+          <input type="password" id="cpassword" name="cpassword" class="form-control"><br>
+          <!--Tech Stack-->
+          <label for="techstack">Choose Tech Stack:</label><br>
+          <input type="checkbox" id="techstack1" name="techstack1" value="React">
+          <label for="techstack1"> React</label><br>
+          <input type="checkbox" id="techstack2" name="techstack2" value="Javascript">
+          <label for="techstack2"> Javascript</label><br>
+          <input type="checkbox" id="techstack3" name="techstack3" value="Java">
+          <label for="techstack3"> Java</label><br>
+          <input type="checkbox" id="techstack4" name="techstack4" value="Oracle">
+          <label for="techstack4"> Oracle</label><br>
+          <!--Country-->
+          <label for="country">Choose Country:</label><br>
+          <select id="country" name="country" class="form-control">
+            <option value="india">India</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+          </select>
+        </form>
+        </br>
+        <button type="button" class="btn btn-info btn-lg">Submit</button>
+        <br>
+        <br>
+      </div>
+      <div class="col-sm-4">
+        <h2>CSS Topics</h2>
+        <p>Why to Learn CSS?</p>
+        <br>
+        <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.</p>
+        <p>CSS is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain</p>
+        </p>
+        </div>
+    </div>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Footer Section</p>
+  </div>
+</body>
+
+</html>
